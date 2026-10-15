@@ -1,0 +1,19 @@
+{
+  "name": "exercicio-1-logger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Três exercícios de arquivos assíncronos em Node.js e TypeScript",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npm run build && node dist/exemplo.js",
+    "test": "npm run build && node --test tests/exercicio.test.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "~5.9.3"
+  }
+}
