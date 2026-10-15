@@ -1,6 +1,6 @@
-# Exercício 1
+# Exercício 3
 
-`src/logger.ts` exporta `log(message: string): Promise<void>` e `lerLogs(): Promise<string[]>`. Cada chamada acrescenta timestamp ISO UTC a `app.log`. Arquivo ausente retorna uma lista vazia. Mensagens com quebras de linha são escapadas para manter uma entrada por linha.
+`src/buscarComSeguranca.ts` exporta `buscarComSeguranca(caminho: string): Promise<string | null>`. Lê UTF-8, retorna `null` apenas para `ENOENT` e relança outros erros. Arquivo vazio retorna uma string vazia. O enunciado indica que este exercício deve ser feito sem IA: esta solução gerada por IA serve como referência de estudo; siga a orientação do professor na sua entrega.
 
 ## Executar
 
@@ -19,6 +19,6 @@ O exemplo fica em `src/exemplo.ts`. `npm run build` compila para `dist/`. Os tes
 Na raiz do seu repositório, após copiar esta pasta:
 
 ```sh
-git add exercicio-1-logger
-git commit -m "Resolve exercício 1"
+git add exercicio-3-busca-segura
+git commit -m "Resolve exercício 3"
 ```
